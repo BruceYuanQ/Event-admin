@@ -1,18 +1,13 @@
 <script setup>
-import { useRoute, useRouter } from 'vue-router'
-import { useUserStore } from '@/stores'
-//路由对象
-const router = useRouter()
-//路由参数
-const route = useRoute()
-console.log(router, route, userStore)
-
-const userStore = useUserStore()
+import zh from 'element-plus/es/locale/lang/zh-cn.mjs'
 </script>
 
 <template>
   <div>
-    <router-view></router-view>
+    <!-- 设置中文 -->
+    <el-config-provider :locale="zh">
+      <router-view></router-view>
+    </el-config-provider>
   </div>
 </template>
 

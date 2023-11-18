@@ -1,3 +1,3 @@
 <template>
-  <div>hezi</div>
+  <el-button text>Click to open the Message Box</el-button>
 </template>
