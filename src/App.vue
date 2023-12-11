@@ -5,6 +5,7 @@ import zh from 'element-plus/es/locale/lang/zh-cn.mjs'
 <template>
   <div>
     <!-- 设置中文 -->
+    <!-- 测试 -->
     <el-config-provider :locale="zh">
       <router-view></router-view>
     </el-config-provider>
